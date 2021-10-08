@@ -33,7 +33,7 @@ for num in range(lower, upper + 1):
    temp = num
    while temp > 0:
        digit = temp % 10
-       sum += digit ** order
+       sum = sum + digit ** order
        temp //= 10
 
    if num == sum:

@@ -33,9 +33,35 @@ for num in range(lower, upper + 1):
    temp = num
    while temp > 0:
        digit = temp % 10
-       sum = sum + digit ** order
+       sum += digit ** order
        temp //= 10
 
    if num == sum:
        print(num)
 >>>>>>> m2
+
+
+Code 03
+
+#Another example Program to check Armstrong numbers in a certain interval
+
+lower = 0.1
+upper = 1
+
+for num in range(lower, upper + 1):
+
+   # order of number
+   order = len(str(num))
+    
+   # initialize sum
+   sum = 0
+
+   temp = num
+   while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
+
+   if num == sum:
+       print(num)
+

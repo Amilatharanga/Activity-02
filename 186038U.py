@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python program to display all the prime numbers within an interval
 
 lower = 1000
@@ -13,3 +14,26 @@ for num in range(lower, upper + 1):
                break
        else:
            print(num)
+=======
+# Program to check Armstrong numbers in a certain interval
+
+lower = 100
+upper = 2000
+
+for num in range(lower, upper + 1):
+
+   # order of number
+   order = len(str(num))
+    
+   # initialize sum
+   sum = 0
+
+   temp = num
+   while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
+
+   if num == sum:
+       print(num)
+>>>>>>> m2
